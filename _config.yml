@@ -103,3 +103,7 @@ deploy:
   type: git
   repo: https://github.com/egecelikci/yungretr0pnppl
   branch: master
+
+feed:
+  type: atom
+  path: feed.xml
