@@ -1,7 +1,7 @@
 ---
 title: SEZON GELDİ
 date: 2019-04-21
-tags:
+tags: 'gereksiz senaryo'
 ---
 
 {% img /assets/babet.jpg %}

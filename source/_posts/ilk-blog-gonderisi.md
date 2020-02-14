@@ -1,7 +1,6 @@
 ---
 title: Blog'un Tarzı ve İşleyişi
 date: 2018-04-30
-tags:
 ---
 
 {% img /assets/beerios.jpg %}

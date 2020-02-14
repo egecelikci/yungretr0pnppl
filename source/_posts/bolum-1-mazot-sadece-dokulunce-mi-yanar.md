@@ -1,7 +1,7 @@
 ---
 title: 'Bölüm #1 – Mazot sadece dökülünce mi yanar?'
 date: 2020-02-12
-tags:
+tags: 'üfleyip yazdıklarım #1'
 ---
 
 {% img /assets/petrolstation.jpg %}
