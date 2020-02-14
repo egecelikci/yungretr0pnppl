@@ -1,0 +1,65 @@
+nav:
+  home: Ana Sayfa
+  about: Hakkımda
+  articles: Yazılar
+  tag: Etiket
+  category: Kategori
+  projects: Projeler
+  search: Ara
+
+footer:
+  copyright: Tüm Hakları Saklıdır
+
+index:
+  find_me_on: Bana şuralardan ulaşabilirsiniz
+  enum_comma: ','
+  enum_and: ve
+  articles: Yazılar
+  projects: Projeler
+  topics: Konular
+  most_recent: En yeni
+
+post:
+  desktop:
+    previous: Önceki gönderi
+    next: Sonraki gönderi
+    back_to_top: Başa dön
+    share: Gönderiyi paylaş
+  mobile:
+    menu: Menü
+    toc: İçindekiler
+    back_to_top: Başa dön
+    share: Paylaş
+
+search:
+  search: Ara...
+  no_results: Hiçbir sonuç bulunamadı.
+
+tag_cloud:
+  zero: No tags
+
+pagination:
+  page: 'Sayfa %d toplam: %d'
+
+counter:
+  tag_cloud:
+    zero: Etiket yok
+    one: ""
+    other: ""
+
+  categories:
+    zero: Kategori yok
+    one: ""
+    other: ""
+
+  archive_posts:
+    zero: Gönderi yok.
+    one: ""
+    other: ""
+
+comments:
+  no_js: Yorumları görebilmek için lütfen JavaScript'e izin verin.
+
+tooltip:
+  copy_tip: Copy to clipboard!
+  copied: Copied!
