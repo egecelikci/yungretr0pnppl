@@ -8,11 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="zihnimde dönüp duran saçma işler">
 <meta property="og:type" content="website">
-<meta property="og:title" content="yungretr0pnppl">
-<meta property="og:url" content="http://egecelikci.github.io/yungretr0pnppl/archives/2020/">
+<meta property="og:title" content="Search">
+<meta property="og:url" content="http://egecelikci.github.io/yungretr0pnppl/search/">
 <meta property="og:site_name" content="yungretr0pnppl">
 <meta property="og:description" content="zihnimde dönüp duran saçma işler">
 <meta property="og:locale" content="tr_TR">
+<meta property="article:published_time" content="2020-02-14T19:17:53.242Z">
+<meta property="article:modified_time" content="2020-02-14T19:17:53.242Z">
 <meta property="article:author" content="Utku Çelikçi">
 <meta name="twitter:card" content="summary">
     
@@ -34,7 +36,7 @@
         
     
     <!-- title -->
-    <title>Yazılar: 2020</title>
+    <title>Search</title>
     <!-- styles -->
     
 <link rel="stylesheet" href="/yungretr0pnppl/css/style.css">
@@ -86,42 +88,22 @@
 </header>
 
         
-        <div id="archive">
-  <ul class="post-list">
-    
-    
-    
-    
-      
-      
-      
-      
-        <h2>2020</h2>
-      
-      <li class="post-item">
-        
-    <div class="meta">
-      
-        
-          <time datetime="2020-02-11T21:00:00.000Z" itemprop="datePublished">12-02-2020</time>
-        
-      
-    </div>
-
-
-        <span>
-    
-        <a class="" href="/yungretr0pnppl/2020/02/11/bolum-1-mazot-sadece-dokulunce-mi-yanar/">Bölüm #1 – Mazot sadece dökülünce mi yanar?</a>
-    
-
-
-</span>
-      </li>
-    
-  </ul>
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
   
 
-</div>
+  <div class="content" itemprop="articleBody">
+      
+        <section id="search">
+  <form>
+    <input type="text" class="search-input" id="search-input" placeholder="Ara...">
+  </form>
+  <div id="search-result"></div>
+  <p class="search-no-result">Hiçbir sonuç bulunamadı.</p>
+</section>
+
+      
+  </div>
+</article>
 
         
         <footer id="footer">
@@ -168,6 +150,45 @@
 
 <!-- search -->
 
+  
+<script src="/yungretr0pnppl/js/search.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+
+    var $inputArea = $("input#search-input");
+    var $resultArea = document.querySelector("div#search-result");
+
+    $inputArea.focus(function() {
+      var search_path = "search.xml";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "/yungretr0pnppl/" + search_path;
+      searchFunc(path, 'search-input', 'search-result');
+    });
+
+    $inputArea.keydown(function(e) {
+      if (e.which == 13) {
+        e.preventDefault();
+      }
+    });
+
+    var observer = new MutationObserver(function(mutationsList, observer) {
+      if (mutationsList.length == 1) {
+        if (mutationsList[0].addedNodes.length) {
+          $(".search-no-result").hide();
+        } else if (mutationsList[0].removedNodes.length) {
+          $(".search-no-result").show(200);
+        }
+      }
+    });
+
+    observer.observe($resultArea, { childList: true });
+
+  });
+  </script>
+
 <!-- Google Analytics -->
 
 <!-- Baidu Analytics -->
@@ -181,7 +202,7 @@
             var dsq = document.createElement('script');
             dsq.type = 'text/javascript';
             dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
